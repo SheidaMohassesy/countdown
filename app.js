@@ -61,7 +61,7 @@ const oneMinut = 60 * 1000;
 let days = t / oneDay;
 days = Math.floor(days);
 let hours = Math.floor((t % oneDay) / oneHour);
-
-console.log(hours);
+let minutes = Math.floor((t % oneHour) / oneMinut);
+console.log(minutes);
 }
 getRemainingDate();
